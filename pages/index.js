@@ -29,17 +29,19 @@ const index = ({data}) => {
     <div className={`${styles.colorBg} ${styles.text_color} `}>
     <Navbar/>
     <h1>
-       <Link href="/blog">
+          <Link href="/blog">
             <a>Blog</a>
           </Link>
          Welcome to <a href="https://nextjs.org">Next js! by Nikhil</a>
     </h1>
    </div>
    {
-     data.map((curElem) => {
+     data.slice(0,5).map((curElem) => {
         return  <div key={curElem.id}>
             <h3>{curElem.id} </h3>
-            <h2>{curElem.title}</h2>
+            <Link href={`/blog/${curElem.id}`}>
+              <h2 className="nav-link">{curElem.title}</h2>
+            </Link>
         </div>
      })
    }

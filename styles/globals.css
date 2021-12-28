@@ -60,3 +60,7 @@ nav{
   font-size: 4rem;
 
 }
+
+.nav-link {
+  cursor: pointer;
+}
