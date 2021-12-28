@@ -30,9 +30,9 @@ const index = ({data}) => {
     <Navbar/>
     <h1>
           <Link href="/blog">
-            <a>Blog</a>
+            <a>Blog </a>
           </Link>
-         Welcome to <a href="https://nextjs.org">Next js! by Nikhil</a>
+         Welcome to <a href="https://nextjs.org">Next js! complete by Nikhil</a>
     </h1>
    </div>
    {
