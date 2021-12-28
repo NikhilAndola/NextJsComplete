@@ -1,0 +1,8 @@
+module.exports = {
+  reactStrictMode: true,
+  image: {
+    loader: 'imgix',
+    domains: ["images.pexels.com","cdn.pixabay.com"],
+    formats: ['image/avif', 'image/webp'],
+  },
+};
